@@ -1,0 +1,27 @@
+﻿<div class="row cv-selection-header">
+    <div class="col-md-4 col-sm-6 col-xs-6">
+        <label>כמות להוספה</label>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 cv-head-quantity">
+        <label>יח/משקל</label>
+    </div>
+    <div class="col-md-5 col-sm-3 col-xs-3">
+        <label>שם המוצר</label>
+    </div>
+</div>
+
+<div class="cv-empty-products-list" ng-if="$ctrl.selectedProductsService.selectedList.length === 0">
+    <label>הסל שלך ריק, הוסף/י מוצרים לסל</label>
+</div>
+<div class="cv-ul">
+    <ul class="cv-added-products-list">
+        <cv-Selected-Product-Item ng-repeat="product in $ctrl.selectedProductsService.selectedList"
+                                  product="product">
+        </cv-Selected-Product-Item>
+    </ul>
+</div>
+
+ 
+    
+
+

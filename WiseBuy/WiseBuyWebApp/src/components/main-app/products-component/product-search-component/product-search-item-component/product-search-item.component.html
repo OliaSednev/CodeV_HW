@@ -1,0 +1,26 @@
+﻿<li class="cv-product-search-item">
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-3 cv-add">
+            <button class="cv-add-button" 
+                    ng-click="$ctrl.addProduct()">הוסף</button>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-3 cv-product-amount">
+            <input class="form-control cv-amount" type="number" min="0"
+                   placeholder="0"
+                   ng-model="$ctrl.product.amount"/>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-6 cv-product-name-style">
+            <div class="cv-product-name">
+                <label>{{$ctrl.product.name}}</label>
+            </div>
+            <div class="cv-product-description">
+                <label>{{$ctrl.product.description}}</label>
+            </div>
+            <div >
+                <span class="cv-product-quantity">יח\גרם</span>
+            </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2 hidden-xs cv-product-img">
+        </div>
+    </div>
+</li>

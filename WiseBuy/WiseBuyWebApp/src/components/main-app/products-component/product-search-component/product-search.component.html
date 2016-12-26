@@ -1,0 +1,113 @@
+﻿<div class="row cv-row">
+    <div class="col-md-3 cv-button-size">
+        <button class="cv-compare-button"
+                ng-click="$ctrl.compareCarts()">
+            השווה סל קניות
+        </button>
+
+    </div>
+    <div class="col-md-8 col-sm-9 col-xs-9 cv-search-products">
+
+        <span class="glyphicon glyphicon-search cv-search-icon"></span>
+        <input type="text" class="form-control cv-search-textbox" 
+               ng-focus="$ctrl.focus = true"
+               ng-blur="$ctrl.focus = false"
+               ng-model="$ctrl.productSearch"
+               ng-click="$ctrl.productSearch=''"/>
+
+        <div class="cv-search-list" 
+             ng-show="$ctrl.focus || $ctrl.over"
+             ng-mouseover="$ctrl.over = true" 
+             ng-mouseleave="$ctrl.over = false">
+            <ul>
+                <cv-Product-Search-Item 
+                    ng-repeat="price in $ctrl.storeSelectionService.storeSelectionList[0].selectedStore.prices | filter:$ctrl.productSearch"            
+                    product="price.product">
+                </cv-Product-Search-Item>
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-1 col-sm-1 col-xs-1 cv-search-label">
+        <label>חפש</label>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<div class="row">
+            <div dir="rtl" class="row box-shadow items-info-title">
+                <div class="col-md-4">
+                    <span><b class="cv-product-quantity">כמות להוספה</b></span>
+                </div>
+                <div class="col-md-3">
+                    <span><b>יח/משקל</b></span>
+                </div>
+                <div class="col-md-5">
+                    <span><b class="product-name">שם המוצר</b></span>
+                </div>
+            </div>
+
+            <div class="row box-shadow empty-shoping-cart" ng-show="!$ctrl.shopingCartItems.length">
+                <b>הסל שלך ריק, הוסף מוצרים לסל</b>
+            </div>
+            <div class="row box-shadow repeated-item" ng-repeat="product in $ctrl.shopingCartItems">
+                <div class="col-md-12">
+                    <div class="row product-row">
+                        <div class="col-md-2">
+                            <button class="product-btn" ng-click="$ctrl.removeProductFromShopingCart(product);">הסר</button>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="product-amount" type="number" min="1" ng-model="product.quantity" />
+                        </div>
+                        <div class="col-md-8 small-font">
+                            <div class="row box-shadow product-data">
+                                <div class="col-md-5" dir="rtl">
+                                    <span class="product-info"><b>{{product.name}}</b></span>
+                                </div>
+                            </div>
+                            <div class="row box-shadow product-data">
+                                <div class="col-md-5" dir="rtl">
+                                    <span class="product-info">{{product.description}}</span>
+                                </div>
+                            </div>
+                            <div class="row box-shadow">
+                                <span class="product-unit-of-measure">{{product.unitOfMeasure}}</span>
+                            </div>
+                            <img class="product-img" ng-src="{{product.imageUrl}}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+      
+

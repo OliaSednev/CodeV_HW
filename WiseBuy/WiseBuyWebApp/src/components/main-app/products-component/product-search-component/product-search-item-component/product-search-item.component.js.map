@@ -1,0 +1,1 @@
+{"version":3,"file":"product-search-item.component.js","sourceRoot":"","sources":["product-search-item.component.ts"],"names":[],"mappings":"AAAA;IAKI,+BAAoB,uBAAgD;QAAhD,4BAAuB,GAAvB,uBAAuB,CAAyB;IACpE,CAAC;IAED,0CAAU,GAAV;QACI,IAAI,CAAC,uBAAuB,CAAC,UAAU,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;IAC1D,CAAC;IARM,6BAAO,GAAa,CAAC,yBAAyB,CAAC,CAAC;IAS3D,4BAAC;AAAD,CAAC,AAXD,IAWC"}

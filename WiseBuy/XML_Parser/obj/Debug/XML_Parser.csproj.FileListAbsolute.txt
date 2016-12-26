@@ -1,0 +1,14 @@
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\XML_Parser.dll.config
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\XML_Parser.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\XML_Parser.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\DbCreator.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\EntityFramework.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\InterfaceXmlToDb.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\DbCreator.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\InterfaceXmlToDb.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\EntityFramework.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\obj\Debug\XML_Parser.csprojResolveAssemblyReference.cache
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\obj\Debug\XML_Parser.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\XML_Parser\obj\Debug\XML_Parser.pdb

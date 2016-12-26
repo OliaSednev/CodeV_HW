@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B1B5653-12DB-4304-889F-FE1DC4CAA168}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiseBuyWebApp</RootNamespace>
+    <AssemblyName>WiseBuyWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="MainStyleSheet.css">
+      <DependentUpon>MainStyleSheet.less</DependentUpon>
+    </Content>
+    <Content Include="MainStyleSheet.min.css">
+      <DependentUpon>MainStyleSheet.css</DependentUpon>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bower.json" />
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison-item-component\carts-comparison-item.component.css">
+      <DependentUpon>carts-comparison-item.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison-item-component\carts-comparison-item.component.html" />
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison-item-component\carts-comparison-item.component.min.css">
+      <DependentUpon>carts-comparison-item.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison.component.css">
+      <DependentUpon>carts-comparison.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison.component.html" />
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison.component.min.css">
+      <DependentUpon>carts-comparison.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\compare-bar.component.css">
+      <DependentUpon>compare-bar.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\compare-bar.component.html" />
+    <Content Include="src\components\main-app\compare-bar-component\compare-bar.component.min.css">
+      <DependentUpon>compare-bar.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare-item-component\stores-compare-item.component.css">
+      <DependentUpon>stores-compare-item.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare-item-component\stores-compare-item.component.html" />
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare-item-component\stores-compare-item.component.min.css">
+      <DependentUpon>stores-compare-item.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare.component.css">
+      <DependentUpon>stores-compare.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare.component.html" />
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare.component.min.css">
+      <DependentUpon>stores-compare.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\CompareCarts\compareCarts.component.html" />
+    <Content Include="src\components\main-app\header-component\header.component.css">
+      <DependentUpon>header.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\header-component\header.component.html" />
+    <Content Include="src\components\main-app\header-component\header.component.min.css">
+      <DependentUpon>header.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\HomePage\home.component.html" />
+    <Content Include="src\components\main-app\main-app.component.css">
+      <DependentUpon>main-app.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\main-app.component.html" />
+    <Content Include="src\components\main-app\main-app.component.min.css">
+      <DependentUpon>main-app.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\product-search-component\product-search-item-component\product-search-item.component.css">
+      <DependentUpon>product-search-item.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\product-search-component\product-search-item-component\product-search-item.component.html" />
+    <Content Include="src\components\main-app\products-component\product-search-component\product-search-item-component\product-search-item.component.min.css">
+      <DependentUpon>product-search-item.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\product-search-component\product-search.component.html" />
+    <Content Include="src\components\main-app\products-component\product-search-component\product-searsh.component.css">
+      <DependentUpon>product-searsh.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\product-search-component\product-searsh.component.min.css">
+      <DependentUpon>product-searsh.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\products.component.css">
+      <DependentUpon>products.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\products.component.html" />
+    <Content Include="src\components\main-app\products-component\products.component.min.css">
+      <DependentUpon>products.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-product-item-component\selected-product-item.component.css">
+      <DependentUpon>selected-product-item.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-product-item-component\selected-product-item.component.html" />
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-product-item-component\selected-product-item.component.min.css">
+      <DependentUpon>selected-product-item.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-products.component.css">
+      <DependentUpon>selected-products.component.less</DependentUpon>
+    </Content>
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-products.component.html" />
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-products.component.min.css">
+      <DependentUpon>selected-products.component.css</DependentUpon>
+    </Content>
+    <Content Include="src\images\emptyPro.png" />
+    <Content Include="src\images\fruitVeg.png" />
+    <Content Include="typings.json" />
+    <Content Include="src\components\main-app\header-component\header.component.less" />
+    <Content Include="src\components\main-app\products-component\product-search-component\product-searsh.component.less" />
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare.component.less" />
+    <Content Include="MainStyleSheet.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="src\components\main-app\main-app.component.less" />
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison.component.less" />
+    <Content Include="src\components\main-app\compare-bar-component\compare-bar.component.less" />
+    <Content Include="src\components\main-app\products-component\products.component.less" />
+    <Content Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare-item-component\stores-compare-item.component.less" />
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-product-item-component\selected-product-item.component.less" />
+    <Content Include="src\components\main-app\products-component\selected-products-component\selected-products.component.less" />
+    <Content Include="src\components\main-app\products-component\product-search-component\product-search-item-component\product-search-item.component.less" />
+    <Content Include="src\components\main-app\carts-comparison-component\carts-comparison-item-component\carts-comparison-item.component.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\ChainsController.cs" />
+    <Compile Include="api\ProductsController.cs" />
+    <Compile Include="api\StoresController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="src\components\main-app\carts-comparison-component\carts-comparison-item-component\carts-comparison-item.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\carts-comparison-component\carts-comparison.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\compare-bar-component\compare-bar.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare-item-component\stores-compare-item.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\compare-bar-component\stores-compare-component\stores-compare.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\header-component\header.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\main-app.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\products-component\product-search-component\product-search-item-component\product-search-item.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\products-component\product-search-component\product-search.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\products-component\products.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\products-component\selected-products-component\selected-product-item-component\selected-product-item.component.ts" />
+    <TypeScriptCompile Include="src\components\main-app\products-component\selected-products-component\selected-products.component.ts" />
+    <TypeScriptCompile Include="src\interfaces\interfaces.ts" />
+    <TypeScriptCompile Include="src\shared\services\chains.service.ts" />
+    <TypeScriptCompile Include="src\shared\services\products.service.ts" />
+    <TypeScriptCompile Include="src\shared\services\selectedProducts.service.ts" />
+    <TypeScriptCompile Include="src\shared\services\stores.service.ts" />
+    <TypeScriptCompile Include="src\shared\services\storeSelection.service.ts" />
+    <TypeScriptCompile Include="typings\globals\angular-route\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\angular\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbCreator\DbCreator.csproj">
+      <Project>{54c2aaab-a1a1-4d34-ad02-dc4a7da59fda}</Project>
+      <Name>DbCreator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\DbCreator.dll.config
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\DbCreator.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\DbCreator.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.csprojResolveAssemblyReference.cache
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.Migrations.Init.resources
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.csproj.GenerateResource.Cache
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\DbCreator\obj\Debug\DbCreator.Migrations.Init1.resources

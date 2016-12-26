@@ -1,0 +1,9 @@
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\InterfaceXmlToDb.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\InterfaceXmlToDb.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\DbCreator.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\EntityFramework.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\DbCreator.pdb
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\bin\Debug\EntityFramework.xml
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\obj\Debug\InterfaceXmlToDb.csprojResolveAssemblyReference.cache
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\obj\Debug\InterfaceXmlToDb.dll
+C:\Users\CodeValue\Documents\GitHubData\WiseBuy\InterfaceXmlToDb\obj\Debug\InterfaceXmlToDb.pdb

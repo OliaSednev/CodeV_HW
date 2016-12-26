@@ -1,0 +1,24 @@
+﻿<div class="container cv-container-carts">
+    <div >
+        <div class="row cv-row-compare">
+            <div class="cv-bar-backround">
+                <div class="cv-bar-tint">
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-12 cv-bar-wrapper">
+                    <h3 class="cv-bar-title">השוואת סל המוצרים הניבחר</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cv-store-list-row">
+            <div class="cv-store-list">
+                <cv-carts-comparison-item ng-repeat="storeSelectionItem in $ctrl.storeSelectionService.storeSelectionList"
+                                          store-selection-item="storeSelectionItem">
+                </cv-carts-comparison-item>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

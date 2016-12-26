@@ -1,0 +1,66 @@
+﻿[
+  {
+    "outputFile": "MainStyleSheet.css",
+    "inputFile": "MainStyleSheet.less"
+  },
+  {
+    "outputFile": "src/components/main-app/compare-bar-component/stores-compare-component/stores-compare.component.css",
+    "inputFile": "src/components/main-app/compare-bar-component/stores-compare-component/stores-compare.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/comparison-component/comparison.component.css",
+    "inputFile": "src/components/main-app/comparison-component/comparison.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/header-component/header.component.css",
+    "inputFile": "src/components/main-app/header-component/header.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/product-search-component/product-searsh.component.css",
+    "inputFile": "src/components/main-app/products-component/product-search-component/product-searsh.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/selected-products-component/selected-product.component.css",
+    "inputFile": "src/components/main-app/products-component/selected-products-component/selected-product.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/main-app.component.css",
+    "inputFile": "src/components/main-app/main-app.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/carts-comparison-component/carts-comparison.component.css",
+    "inputFile": "src/components/main-app/carts-comparison-component/carts-comparison.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/compare-bar-component/compare-bar.component.css",
+    "inputFile": "src/components/main-app/compare-bar-component/compare-bar.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/products.component.css",
+    "inputFile": "src/components/main-app/products-component/products.component.less"
+  },
+  {
+    "outputFile": "src/shared/shared-styles.css",
+    "inputFile": "src/shared/shared-styles.less"
+  },
+  {
+    "outputFile": "src/components/main-app/compare-bar-component/stores-compare-component/stores-compare-item-component/stores-compare-item.component.css",
+    "inputFile": "src/components/main-app/compare-bar-component/stores-compare-component/stores-compare-item-component/stores-compare-item.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/selected-products-component/selected-product-item-component/selected-product-item.component.css",
+    "inputFile": "src/components/main-app/products-component/selected-products-component/selected-product-item-component/selected-product-item.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/selected-products-component/selected-products.component.css",
+    "inputFile": "src/components/main-app/products-component/selected-products-component/selected-products.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/products-component/product-search-component/product-search-item-component/product-search-item.component.css",
+    "inputFile": "src/components/main-app/products-component/product-search-component/product-search-item-component/product-search-item.component.less"
+  },
+  {
+    "outputFile": "src/components/main-app/carts-comparison-component/carts-comparison-item-component/carts-comparison-item.component.css",
+    "inputFile": "src/components/main-app/carts-comparison-component/carts-comparison-item-component/carts-comparison-item.component.less"
+  }
+]

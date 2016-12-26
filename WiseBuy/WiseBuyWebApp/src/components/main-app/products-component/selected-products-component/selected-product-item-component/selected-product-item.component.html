@@ -1,0 +1,25 @@
+﻿<li class="cv-selected-list">
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-3 cv-remove-button">
+            <button class="cv-button-style" ng-click="$ctrl.removeProduct()">הסר</button>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-3 cv-amount-button">
+            <input class="form-control cv-amount" type="number" min="0"
+                   placeholder="0"
+                   ng-model="$ctrl.product.amount"
+                   ng-change="$ctrl.amountChanged()"/>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-1 cv-quantity-style">
+            <span class="cv-quantity">יח\גרם</span>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 cv-item-name">
+            <div class="cv-name">
+                <label class="cv-selected-product-name">{{$ctrl.product.name}}</label>
+            </div>
+            <div class="cv-description">
+                <label>{{$ctrl.product.description}}</label>
+            </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1 hidden-xs cv-img"></div>
+    </div>
+</li>

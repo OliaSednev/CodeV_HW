@@ -1,0 +1,10 @@
+﻿<div class="cv-stores-compare-container" >
+    <cv-stores-compare-item 
+        ng-repeat="storeSelectionItem in $ctrl.storeSelectionService.storeSelectionList"
+        index="$index">
+    </cv-stores-compare-item>
+    <div class="col-md-3 col-md-offset-7 col-sm-3 col-sm-offset-9 col-xs-5 col-xs-offset-5 cv-add-compare-link-wrapper">
+        <a class="cv-add-compare-link"
+           ng-click="$ctrl.storeSelectionService.AddStore()">הוסף חנות להשוואה</a>
+    </div>
+</div>

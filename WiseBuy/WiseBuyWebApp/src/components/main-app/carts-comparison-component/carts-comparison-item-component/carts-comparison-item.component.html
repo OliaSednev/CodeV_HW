@@ -1,0 +1,43 @@
+﻿<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 cv-store-item">
+    <div class="cv-cheapest-store"
+         ng-show="$ctrl.storeSelectionService.IsStoreCheap($ctrl.storeSelectionItem.cart)">
+        
+        <label class="cv-text-style">הזול ביותר</label>
+        <div class="cv-left-triangle"></div>
+        <div class="cv-right-triangle"></div>
+
+    </div>
+    <div class="row cv-compare-row-style">
+        <select class="form-control cv-compare-selected-chain">
+            <option value="">{{$ctrl.storeSelectionItem.selectedChain.name}}</option>
+        </select>
+    </div>
+
+    <div class="row cv-compare-row-style">
+        <select class="form-control cv-compare-selected-store">
+            <option value="">{{$ctrl.storeSelectionItem.selectedStore.name}}</option>
+        </select>
+    </div>
+
+    <div class="col-md-12 cv-total-price-style"
+         ng-class="{'cheapest-store': $ctrl.storeSelectionService.IsStoreCheap($ctrl.storeSelectionItem.cart),
+                     'expensive-store': !($ctrl.storeSelectionService.IsStoreCheap($ctrl.storeSelectionItem.cart))}">
+                   {{$ctrl.storeSelectionItem.cart.totalPrice | currency:"₪":2}}
+    </div>
+    
+    <div class="cv-ul-product-list">
+        <ul>
+            <li ng-repeat="price in $ctrl.storeSelectionItem.cart.prices">
+                <div class="row cv-price-data">
+                    <div class="col-md-4 cv-price-style"
+                         ng-class="{'low-price':$ctrl.storeSelectionService.IsPriceLowest(price),
+                                    'high-price':$ctrl.storeSelectionService.IsPriceHighest(price)}">
+                                    {{price.productPrice | currency:"₪":2}}
+                    </div>
+                    <div class="col-md-8">{{price.product.amount}} x {{price.product.name}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>

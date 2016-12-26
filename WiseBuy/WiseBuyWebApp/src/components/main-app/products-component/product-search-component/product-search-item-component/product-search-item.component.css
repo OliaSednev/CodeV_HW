@@ -1,0 +1,59 @@
+﻿.cv-product-search-item {
+  text-align: right;
+  border-bottom: thin solid #dde1e2;
+  margin-top: 10px;
+}
+.cv-add-button {
+  font-family: open-sans;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #0cb6e7;
+  border-top-color: #0aafdf;
+  border-bottom-color: #0994ef;
+  border-right-color: #0baddc;
+  border-left-color: #12bff1;
+}
+.cv-add {
+  top: 7px;
+  padding-right: 0px;
+}
+.cv-product-img {
+  background-size: cover;
+  height: 54px;
+  width: 54px;
+  background-image: url("/src/images/emptyPro.png");
+}
+.cv-product-amount {
+  text-align: center;
+  direction: rtl;
+  top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+}
+.cv-product-amount .cv-amount {
+  height: 20%;
+  text-align: center;
+}
+.cv-product-name {
+  font-family: open-sans;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: -12px;
+}
+.cv-product-name-style {
+  margin-right: -10px;
+  padding-right: 30px;
+  padding-left: 0px;
+}
+.cv-product-description {
+  font-family: open-sans;
+  font-size: 13px;
+  margin-bottom: -12px;
+}
+.cv-product-quantity {
+  font-size: 11px;
+}
