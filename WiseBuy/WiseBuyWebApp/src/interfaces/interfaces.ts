@@ -2,8 +2,7 @@
 interface IProduct {
     productId: number;
     name: string;
-    description: string;
-    
+    description: string;    
     amount: number;
 }
 
@@ -18,7 +17,6 @@ interface IPrice {
     productPrice: number;
     unitquantity: string;
     quantity: number;
-
 }
 
 interface IStore {
@@ -39,14 +37,6 @@ interface ICart {
     prices: IPrice[];
     totalPrice: number;
 }
-
-//interface IShoppingCart{
-//    chain: IChain;
-//    store: IStore;
-//    prices: IPrice[];
-//    totalPrice: number;
-//}
-
 
 interface IProductsService {
     getProducts();

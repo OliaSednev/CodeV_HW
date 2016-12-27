@@ -45,7 +45,6 @@
         bindings: {
             index: "<"
         }
-
     })
 
     .component("cvProducts", {
@@ -91,8 +90,6 @@
             storeSelectionItem: "<"
         }
     })
-
-
 
     .service("chainsService", ChainsService)
     .service("productsService", ProductsService)
