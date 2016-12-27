@@ -13,6 +13,11 @@
     padding-right: 15px;
   }
 }
+@media (max-width: 770px) {
+  .cv-button-size {
+    padding-right: 15px;
+  }
+}
 .cv-compare-button {
   font-family: open-sans;
   font-size: 16px;
@@ -35,6 +40,7 @@
 .cv-search-label {
   font-family: open-sans;
   font-size: 20px;
+  padding-left: 0px;
 }
 .cv-search-icon {
   color: #dde2e3;
